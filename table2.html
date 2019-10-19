@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="./css/main.css">
 <style>
 table {
   border-collapse: collapse;
@@ -19,69 +21,111 @@ tr:nth-child(even){background-color: #f2f2f2}
 </style>
 </head>
 <body>
+  <div class="topnav">
+  <a class="active" href="index.html">Project</a>
+  <a href="table1.html">Fuel Economy</a>
+  <a href="table2.html">Percent Distribution</a>
+  <a href="table3.html">CO2 Emission</a>
+  <a href="team.html">About Project</a>
+</div>
 
-<h2>Responsive Table</h2>
-<p>If you have a table that is too wide, you can add a container element with overflow-x:auto around the table, and it will display a horizontal scroll bar when needed.</p>
-<p>Resize the browser window to see the effect. Try to remove the div element and see what happens to the table.</p>
+<h2>Production-Weighted Percent Distribution of Estimated Real-World Fuel Economy (MPG).</h2>
+<p>This table contents source from https://www.epa.gov/automotive-trends/download-data-automotive-trends-report.</p>
+<p>Listed 2018-2015 four percentile level.</p>
 
 <div style="overflow-x:auto;">
   <table>
     <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
+      <th>Car or Truck</th>
+      <th>Model Year</th>
+      <th>Percentile 0%</th>
+      <th>Percentile 25%</th>
+      <th>Percentile 50%</th>
+      <th>Percentile 75%</th>
+      <th>Percentile 100%</th>
+      <th>Actual Average</th>
     </tr>
     <tr>
-      <td>Jill</td>
-      <td>Smith</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
+      <td>Car</td>
+      <td>2018</td>
+      <td>11.2</td>
+      <td>26.3</td>
+      <td>29.9</td>
+      <td>33.4</td>
+      <td>132.6</td>
+      <td>29.9</td>
     </tr>
     <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
+      <td>Car</td>
+      <td>2017</td>
+      <td>12.7</td>
+      <td>26.1</td>
+      <td>29.5</td>
+      <td>33.1</td>
+      <td>132.6</td>
+      <td>29.2</td>
     </tr>
     <tr>
-      <td>Adam</td>
-      <td>Johnson</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
+      <td>Car</td>
+      <td>2016</td>
+      <td>12.9</td>
+      <td>26.0</td>
+      <td>29.0</td>
+      <td>32.2</td>
+      <td>121.3</td>
+      <td>28.5</td>
     </tr>
+    <tr>
+      <td>Car</td>
+      <td>2015</td>
+      <td>12.7</td>
+      <td>25.7</td>
+      <td>28.8</td>
+      <td>31.9</td>
+      <td>121.3</td>
+      <td>28.2</td>
+    </tr>
+    <tr>
+      <td>Truck</td>
+      <td>2018</td>
+      <td>10.8</td>
+      <td>19.5</td>
+      <td>22.0</td>
+      <td>25.0</td>
+      <td>48.5</td>
+      <td>21.8</td>
+    </tr>
+    <tr>
+      <td>Truck</td>
+      <td>2017</td>
+      <td>10.8</td>
+      <td>18.9</td>
+      <td>21.5</td>
+      <td>23.8</td>
+      <td>67.3</td>
+      <td>21.4</td>
+    </tr>
+    <tr>
+      <td>Truck</td>
+      <td>2016</td>
+      <td>11.9</td>
+      <td>18.9</td>
+      <td>21.1</td>
+      <td>23.7</td>
+      <td>42.6</td>
+      <td>21.2</td>
+    </tr>
+    <tr>
+      <td>Truck</td>
+      <td>2015</td>
+      <td>10.8</td>
+      <td>19.1</td>
+      <td>20.7</td>
+      <td>23.7</td>
+      <td>31.5</td>
+      <td>21.1</td>
+    </tr>
+    
   </table>
 </div>
 
